@@ -1,0 +1,11 @@
+
+<html><body>
+<form th:action="@{/categories/create}" th:object="${categoryForm}" method="post">
+<input th:field="*{name}" placeholder="이름"/>
+<span th:errors="*{name}"></span>
+<button>등록</button>
+</form>
+<footer>
+<p th:text="${'실습 수행 일시: ' + #temporals.format(#temporals.createNow(),'yyyy-MM-dd HH:mm:ss') + ' | 학번: 2171392 | 성명: 박성호'}"></p>
+</footer>
+</body></html>

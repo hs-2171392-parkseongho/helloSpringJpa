@@ -1,0 +1,19 @@
+
+<html><body>
+<p th:if="${successMessage}" th:text="${successMessage}"></p>
+<p th:if="${errorMessage}" th:text="${errorMessage}"></p>
+<table>
+<tr th:each="c : ${categories}">
+<td th:text="${c.id}"></td>
+<td th:text="${c.name}"></td>
+<td>
+<form th:action="@{/categories/{id}/delete(id=${c.id})}" method="post">
+<button>삭제</button>
+</form>
+</td>
+</tr>
+</table>
+<footer>
+<p th:text="${'실습 수행 일시: ' + #temporals.format(#temporals.createNow(),'yyyy-MM-dd HH:mm:ss') + ' | 학번: 2171392 | 성명: 박성호'}"></p>
+</footer>
+</body></html>

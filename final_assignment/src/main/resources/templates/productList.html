@@ -1,0 +1,11 @@
+
+<html><body>
+<form method="get">
+<input name="keyword" placeholder="검색"/>
+<button>검색</button>
+</form>
+<p th:if="${#lists.isEmpty(products)}">검색 결과 없음</p>
+<footer>
+<p th:text="${'실습 수행 일시: ' + #temporals.format(#temporals.createNow(),'yyyy-MM-dd HH:mm:ss') + ' | 학번: 2171392 | 성명: 박성호'}"></p>
+</footer>
+</body></html>
