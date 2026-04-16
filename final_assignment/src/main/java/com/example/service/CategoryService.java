@@ -1,3 +1,4 @@
+// category 삭제 기능 구현
 
 package com.example.service;
 import org.springframework.stereotype.Service;
