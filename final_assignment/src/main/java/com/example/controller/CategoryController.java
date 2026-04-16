@@ -1,3 +1,4 @@
+// category 등록 기능 구현
 
 package com.example.controller;
 import org.springframework.stereotype.Controller;
